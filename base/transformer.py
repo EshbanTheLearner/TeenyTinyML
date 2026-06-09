@@ -1,8 +1,13 @@
-class Transformer:
+from abc import abstractmethod
+from .estimator import BaseEstimator
 
+class Transformer(BaseEstimator):
+
+    @abstractmethod
     def fit(self, X, y=None):
         raise NotImplementedError
 
+    @abstractmethod
     def transform(self, X):
         raise NotImplementedError
 

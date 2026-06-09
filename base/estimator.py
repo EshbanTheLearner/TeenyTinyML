@@ -1,4 +1,9 @@
-class BaseEstimator:
+from abc import ABC, abstractmethod
+
+class BaseEstimator(ABC):
+    """
+        Parent class for all TeenyTinyML objects.
+    """
 
     def get_params(self):
         return self.__dict__
