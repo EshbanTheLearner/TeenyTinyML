@@ -5,11 +5,11 @@ class Transformer(BaseEstimator):
 
     @abstractmethod
     def fit(self, X, y=None):
-        raise NotImplementedError
+        pass
 
     @abstractmethod
     def transform(self, X):
-        raise NotImplementedError
+        pass
 
     def fit_transform(self, X, y=None):
         self.fit(X, y)
